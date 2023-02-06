@@ -1,9 +1,79 @@
 @use '../ForAll/colors' as color;
 
-.MainPage-BlackAndWhite{
-    height: 50vw;
+.MainPage-BlackSquare{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     width: 50vw;
-    margin-top: -10px;
-    margin-left: -10px;
     background-color: color.$MainColor;
+}
+.MainPage-WhiteSquare{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50vw;
+    background-color: color.$SecondColor;
+}
+.MainPage-Flex{
+    display: flex;
+}
+.MainPage-LeftTopIMG{
+   max-width: 7vw;
+   max-width: 7vw;
+}
+.MainPage-Logo{
+    margin-top: 10vh;
+    margin-left: 19vw;
+    max-width: 12vw;
+    max-width: 12vw;
+ }
+ 
+ .MainPage-Txt{
+        color: color.$SecondColor;
+        margin-left: 18vw;
+        font-weight: 400;
+        text-transform: uppercase;
+ }
+ .MainPage-SiteName{
+    font-size: 40px;
+    margin-bottom: 2vh;
+
+ }
+ .MainPage-paragraf{
+    font-size: 15px;
+ }
+ .MainPage-BlackSquare > button{
+    color: color.$SecondColor;
+    border: color.$SecondColor 2px solid;
+    background: transparent;
+    border-radius: 5px;
+    max-width: 15vw;
+    min-height: 5vh;
+    font-size: 17px;
+}
+.MainPage-FirstButton{
+    margin-top: 10vh;
+    margin-left: 13vw;
+}
+.MainPage-SecondButton{
+    margin-top: 2vh;
+    margin-left: 18vw;
+}
+.MainPage-WhitePartTxt{
+    margin-top: 50vh;
+    color: color.$MainColor;
+    margin-left: 7vw;
+    max-width: 35vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.MainPage-Button{
+    margin-top: 10vh;
+    border: color.$MainColor 2px solid;
+    border-radius: 5px;
+    max-width: 15vw;
+    min-height: 5vh;
+    margin-left: 17vw;
+    font-size: 17px;
 }
