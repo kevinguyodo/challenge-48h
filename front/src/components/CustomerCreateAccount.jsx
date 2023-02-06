@@ -7,7 +7,7 @@ function Login() {
   const [PSW1, SetPassWord1] = useState("");
 
   return (
-    <div className='blue'>
+    <div className=''>
     </div>
   )
 }
