@@ -9,6 +9,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Ways/>
   </React.StrictMode>
 )
-
-
-reportWebVitals();
