@@ -1,10 +1,17 @@
 /*Je crée la bar de gauche sur l'affichage @use "./components/LeftBar";*/
 @use "./components/login";
 @use "./components/mainPage";
+<<<<<<< HEAD
 @use "./components/UserConnectionPage";
 
 
+=======
+@use "./components/CustomerCreateAccount";
+@use "./components/LeftBar";
+>>>>>>> font-rootPage
 
+/*On importe les composents qui seront appliquer à toutes les pages*/
+@use "./ForAll/forall";
 .dis{
     display: flex;
 }
