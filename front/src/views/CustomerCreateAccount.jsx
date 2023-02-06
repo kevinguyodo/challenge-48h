@@ -1,14 +1,13 @@
-import LeftBar from '../components/LeftBar'
+import CustomerCreateAccount from '../components/CustomerCreateAccount'
 
-function LoginPage() {
+function CreateAccount() {
 
   return (
       <div>
-        <LeftBar/>
-        <Login/>
+        <CustomerCreateAccount/>
       </div>
   )
 }
 
-export default LoginPage
+export default CreateAccount
 

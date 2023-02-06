@@ -4,12 +4,11 @@ import {useNavigate} from 'react-router-dom'
 function LoginPage() {
   const navigate = useNavigate()
   const ReceiveData = (mail,psw) =>{
-    console.log(mail)
-    console.log(psw)
+    //Todo faire la requete pour verifier si le mail et le mdp sont correct
   }
   
   const IntoCustomerAccount = () => {
-    navigate('/')
+    navigate('CustomerCreateAccount')
   }
 
   return (
