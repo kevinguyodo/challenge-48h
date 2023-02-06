@@ -1,9 +1,9 @@
-import Login from '../components/Login'
+import Page from '../components/MainPage'
 
 function Mainpage() {
 
   return (
-      <Login/>
+      <Page/>
   )
 }
 
