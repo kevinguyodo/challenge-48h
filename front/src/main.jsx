@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Ways from './Ways'
+import './scss/style.scss';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -8,5 +9,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Ways/>
   </React.StrictMode>
 )
+
 
 reportWebVitals();

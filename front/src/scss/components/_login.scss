@@ -1,0 +1,9 @@
+@use '../ForAll/colors' as color;
+
+.blue{
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 20vw;
+    height: 100vh;
+    background-color: color.$MainColor;
+}
