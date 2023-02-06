@@ -1,7 +1,7 @@
-import { schema, CustomMessages, rules } from "@ioc:Adonis/Core/Validator";
-import type { HttpContextContract } from "@ioc:Adonis/Core/HttpContext";
+import { schema, CustomMessages, rules } from '@ioc:Adonis/Core/Validator'
+import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 
-export default class CreateProductValidator {
+export default class CreateCartValidator {
   constructor(protected ctx: HttpContextContract) {}
 
   /*
@@ -17,28 +17,15 @@ export default class CreateProductValidator {
    * 2. The email must be of data type string, formatted as a valid
    *    email. But also, not used by any other user.
    *    ```
-   * 
    *     schema.string({}, [
    *       rules.email(),
    *       rules.unique({ table: 'users', column: 'email' }),
    *     ])
    *    ```
    */
-
   public schema = schema.create({
-    name: schema.string({ trim: true }, [
-      rules.unique({ table: "products", column: "name" }),
-      rules.minLength(2),
-      rules.maxLength(150),
-    ]),
-    price: schema.number(),
-    category_id: schema.number([
-      rules.exists({ table: "categories", column: "id" }),
-    ]),
-    cart_id: schema.number([rules.exists({ table: "cart", column: "id" })]),
-    description: schema.string({ trim: true }, [rules.maxLength(500)]),
-  });
-
+    client_id: schema.number([rules.exists({ table: "users", column: "id" })]),
+  })
   /**
    * Custom messages for validation failures. You can make use of dot notation `(.)`
    * for targeting nested fields and array expressions `(*)` for targeting all
@@ -50,5 +37,5 @@ export default class CreateProductValidator {
    * }
    *
    */
-  public messages: CustomMessages = {};
+  public messages: CustomMessages = {}
 }

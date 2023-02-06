@@ -3,7 +3,6 @@ import Category from "App/Models/Category";
 import Company from "App/Models/Company";
 import CompanyCategory from "App/Models/CompanyCategory";
 import Product from "App/Models/Product";
-import User from "App/Models/User";
 
 export default class extends BaseSeeder {
   public async run() {
