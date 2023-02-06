@@ -1,21 +1,16 @@
 import BaseSchema from "@ioc:Adonis/Lucid/Schema";
 
-export default class CompanyCategory extends BaseSchema {
-  protected tableName = "company_categories";
+export default class Company extends BaseSchema {
+  protected tableName = "companies";
 
   public async up() {
     this.schema.createTable(this.tableName, (table) => {
       table.increments("id").primary();
+      // table.integer("user_id").unsigned().references("users.id").notNullable();
       table.string("name").notNullable();
-      table
-        .integer("company_id")
-        .unsigned()
-        .references("companies.id")
-        .notNullable();
-
-      /**
-       * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
-       */
+      table.string("email").notNullable();
+      table.string("phone_number").notNullable();
+      table.string("address").notNullable();
       table.timestamp("created_at", { useTz: true });
       table.timestamp("updated_at", { useTz: true });
     });

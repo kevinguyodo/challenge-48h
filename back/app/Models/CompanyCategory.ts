@@ -1,6 +1,6 @@
-import { DateTime } from 'luxon'
-import { BaseModel, column, hasMany, HasMany } from '@ioc:Adonis/Lucid/Orm'
-import Company from './Company';
+import { DateTime } from "luxon";
+import { BaseModel, column, hasMany, HasMany } from "@ioc:Adonis/Lucid/Orm";
+import Company from "./Company";
 
 export default class CompanyCategory extends BaseModel {
   @column({ isPrimary: true })
@@ -8,15 +8,16 @@ export default class CompanyCategory extends BaseModel {
 
   @column()
   public name: string;
+
   @hasMany(() => Company)
   public company: HasMany<typeof Company>;
 
   @column()
-  public id_company: number;
+  public company_id: number;
 
   @column.dateTime({ autoCreate: true })
-  public createdAt: DateTime
+  public createdAt: DateTime;
 
   @column.dateTime({ autoCreate: true, autoUpdate: true })
-  public updatedAt: DateTime
+  public updatedAt: DateTime;
 }

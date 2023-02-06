@@ -27,9 +27,13 @@ Route.get("/product", "ProductsController.getAllProduct");
 Route.get("/product/:id", "ProductsController.getProduct");
 Route.get("/category", "CategoriesController.getAllCategory");
 Route.get("/category/:id", "CategoriesController.getCategory");
+Route.get("/company", "CompanyController.getAllCompany");
+Route.get("/company/:id", "CompanyController.getCompany");
 
 // Post Method
 Route.post("/product", "ProductsController.createProduct");
+Route.post("/company", "CompanyController.createCompany");
 
 // Put Method
 Route.put("/product/:id", "ProductsController.updateProduct");
+Route.put("/company/:id", "CompanyController.updateCompany");

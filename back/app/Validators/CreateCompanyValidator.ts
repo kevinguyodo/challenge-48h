@@ -1,16 +1,25 @@
-import { schema, rules, CustomMessages } from '@ioc:Adonis/Core/Validator'
-import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
+import { schema, rules, CustomMessages } from "@ioc:Adonis/Core/Validator";
+import type { HttpContextContract } from "@ioc:Adonis/Core/HttpContext";
 
 export default class CreateCompanyValidator {
   constructor(protected ctx: HttpContextContract) {}
 
   public schema = schema.create({
-    name: schema.string({ trim: true }, [rules.alpha()]),
-    email: schema.string({ trim: true }, [rules.email(), rules.unique({ table: 'company', column: 'email' })]),
-    address: schema.string({ trim: true }, [rules.alpha()]),
-    phone_number: schema.string({ trim: true }, [rules.alphaNum({ allow: ['space', 'dash'] }), rules.maxLength(14)]),
-    user_id: schema.number([rules.exists({ table: 'users', column: 'id' })]),
-
+    name: schema.string({ trim: true }, [
+      rules.alpha({ allow: ["space", "dash"] }),
+    ]),
+    email: schema.string({ trim: true }, [
+      rules.email(),
+      rules.unique({ table: "companies", column: "email" }),
+    ]),
+    address: schema.string({ trim: true }, [
+      rules.alphaNum({ allow: ["space", "dash"] }),
+    ]),
+    phone_number: schema.string({ trim: true }, [
+      rules.alphaNum({ allow: ["space", "dash"] }),
+      rules.maxLength(14),
+    ]),
+    // user_id: schema.number([rules.exists({ table: "users", column: "id" })]),
   });
 
   /**
@@ -58,5 +67,5 @@ export default class CreateCompanyValidator {
       "Your phone number can only contain letters, numbers, spaces and dashes",
     "phone_number.maxLength":
       "Your phone number is too long, maximum length is 14",
-  }
+  };
 }
