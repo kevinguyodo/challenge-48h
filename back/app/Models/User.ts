@@ -7,7 +7,6 @@ import {
   hasMany,
 } from "@ioc:Adonis/Lucid/Orm";
 import Hash from "@ioc:Adonis/Core/Hash";
-import Comment from "./Comment";
 
 export default class User extends BaseModel {
   @column({ isPrimary: true })
@@ -41,8 +40,8 @@ export default class User extends BaseModel {
   @column()
   public phone_number: string;
 
-  @hasMany(() => Comment)
-  public comments: HasMany<typeof Comment>;
+  // @hasMany(() => Comment)
+  // public comments: HasMany<typeof Comment>;
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime;
