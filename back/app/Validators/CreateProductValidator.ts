@@ -1,7 +1,7 @@
-import { schema, CustomMessages, rules } from '@ioc:Adonis/Core/Validator'
-import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
+import { schema, CustomMessages, rules } from "@ioc:Adonis/Core/Validator";
+import type { HttpContextContract } from "@ioc:Adonis/Core/HttpContext";
 
-export default class ProductValidator {
+export default class CreateProductValidator {
   constructor(protected ctx: HttpContextContract) {}
 
   /*
@@ -23,23 +23,20 @@ export default class ProductValidator {
    *     ])
    *    ```
    */
+
   public schema = schema.create({
     name: schema.string({ trim: true }, [
       rules.unique({ table: "products", column: "name" }),
       rules.minLength(2),
-      rules.maxLength(150)
+      rules.maxLength(150),
     ]),
     price: schema.number(),
     category_id: schema.number([
-      rules.exists({ table: "categories", column: "id" })
+      rules.exists({ table: "categories", column: "id" }),
     ]),
-    cart_id: schema.number([
-      rules.exists({ table: "cart", column: "id" })
-    ]),
-    description: schema.string({ trim: true }, [
-      rules.maxLength(500)
-    ]),
-  })
+    cart_id: schema.number([rules.exists({ table: "cart", column: "id" })]),
+    description: schema.string({ trim: true }, [rules.maxLength(500)]),
+  });
 
   /**
    * Custom messages for validation failures. You can make use of dot notation `(.)`
@@ -52,5 +49,5 @@ export default class ProductValidator {
    * }
    *
    */
-  public messages: CustomMessages = {}
+  public messages: CustomMessages = {};
 }
