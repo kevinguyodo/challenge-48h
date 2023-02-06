@@ -1,9 +1,9 @@
-import Login from '../components/Login'
+import UserConnection from '../components/UserConnectionPage'
 
 function UserConnectionPage() {
 
   return (
-      <UserConnectionPage/>
+      <UserConnection/>
   )
 }
 

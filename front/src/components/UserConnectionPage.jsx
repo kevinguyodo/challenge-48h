@@ -1,10 +1,12 @@
 import { useState } from 'react'
+      // {/* <img src="../assets/img/logoV1.png"></img> */}
 
 function UserConnectionPage() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
-    <div className='blue'>
+    <div>
+      <p>ghhbserigheruidbgesridger</p>
     </div>
   )
 }
