@@ -1,0 +1,104 @@
+@use '../ForAll/colors' as color;
+
+.Cart-page {
+        background-color: color.$MainColor;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+}
+
+.Cart-Top{
+        background-color: color.$SecondColor;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+
+.Cart-Logo{
+        max-width: 8vw;
+        max-height: 8vw;
+        margin-left: 1vw;
+}
+
+.Cart-Top > p {
+        margin-left: 1vw;
+        font-size: 35px;
+        color: color.$MainColor;
+}
+
+.Cart-AddButton{
+        color : color.$MainColor;
+        background-color: transparent;
+        border: none;
+        font-size: 50px;
+        font-weight: bolder;
+        margin-left: 55vw;
+}
+
+.Cart-RechercheBar{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border: color.$MainColor solid 2px;	
+        border-radius: 20px;
+        min-height: 6vh;
+        margin-left: 1vw;
+        min-width: 10vw;
+}
+
+.Cart-RechercheBar > img{
+        max-width: 2vw;
+        max-height: 2vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding-right: 1vw;
+        border-right: color.$MainColor 2px solid;
+}
+
+.Cart-Center {
+    max-width:960px;
+    margin: auto;
+    position:relative;
+    display: table;
+    
+}
+
+.Cart-Center-Left {
+    width:15vw;
+    height: 450px;
+    right:0;
+    margin: 10%;
+    display: table-column;
+    background-color:black;
+}
+
+.Cart-Center-Right{
+    width: 82vw; 
+    height : 360px;   
+    margin: 10px;
+    min-height:150px;
+    display: flex;
+    background-color:#9966FF;
+
+}
+
+.Cart-Center-Top {
+
+}
+
+.Cart-Center-Bottom {
+
+}
+
+p1 {
+    font-weight:bold;
+    font-family: 'Patrick Hand', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: color.$SecondColor;
+    margin-top: 2vh;
+    
+}
