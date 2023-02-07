@@ -1,4 +1,8 @@
-import { useState } from 'react'
+import { useState } from "react";
+
+
+function Login() {
+  const [count, setCount] = useState(0);
 
 function Login(props) {
   const [Email, setEmail] = useState("");
@@ -21,4 +25,4 @@ function Login(props) {
   )
 }
 
-export default Login
+export default Login;

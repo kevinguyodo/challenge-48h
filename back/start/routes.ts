@@ -18,8 +18,34 @@
 |
 */
 
-import Route from '@ioc:Adonis/Core/Route'
+import Route from "@ioc:Adonis/Core/Route";
 
-Route.get('/', async () => {
-  return { hello: 'world' }
-})
+// Get Method
+Route.get("/me", "AuthController.me").middleware("auth");
+Route.get("/user/:uuid", "UsersController.getUser");
+Route.get("/product", "ProductsController.getAllProduct");
+Route.get("/product/:id", "ProductsController.getProduct");
+Route.get(
+  "/category-company/:id",
+  "CompanyCategoriesController.getCompanyCategory"
+);
+Route.get(
+  "/category-company",
+  "CompanyCategoriesController.getAllCompanyCategory"
+);
+Route.get("/category", "CategoriesController.getAllCategory");
+Route.get("/category/:id", "CategoriesController.getCategory");
+Route.get("/company", "CompanyController.getAllCompany");
+Route.get("/company/:id", "CompanyController.getCompany");
+Route.get("/carts", "CartsController.getAllCart");
+Route.get("/carts/:id", "CartsController.getCart");
+
+// Post Method
+Route.post("/product", "ProductsController.createProduct");
+Route.post("/company", "CompanyController.createCompany");
+Route.post("/carts", "CartsController.createCart");
+
+// Put Method
+Route.put("/product/:id", "ProductsController.updateProduct");
+Route.put("/company/:id", "CompanyController.updateCompany");
+Route.put("/cart/:id", "CartsController.updateCart");
