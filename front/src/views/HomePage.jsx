@@ -7,7 +7,6 @@ const Home = () => {
             <div>
             <TopBar/>
             <HomePage/>
-            <ProfilePage/>
             </div>
         )
 }
