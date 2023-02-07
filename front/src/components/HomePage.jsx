@@ -14,7 +14,7 @@ const HomePage = () => {
         }
         return (
                 <div className="HomePage-page">
-                        <section className="HomePage-Top">
+                        {/* <section className="HomePage-Top">
                                 <img src={Logo} alt="Logo" className="HomePage-Logo" />
                                 <p>YMazone</p>
                                 <form><button className='HomePage-AddButton'>+</button></form>
@@ -23,7 +23,7 @@ const HomePage = () => {
                                         <input type="text" className='HomePage-SearchBar'/>
                                 </div>
                                 <img src={PP} alt="profile image" /> 
-                        </section>
+                        </section> */}
                         <input type="checkbox" className='HomePage-CheckBox'/>
                         <h2>DERNIERS PRODUITS</h2>
                         <section className="HomePage-Products">
