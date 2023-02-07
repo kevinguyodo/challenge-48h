@@ -1,0 +1,55 @@
+@use '../ForAll/colors' as color;
+
+.TopBar-Top{
+    background-color: color.$SecondColor;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.TopBar-AddButton{
+    color : color.$MainColor;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 57vw;
+}
+
+.TopBar-RechercheBar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: color.$MainColor solid 2px;	
+    border-radius: 20px;
+    min-height: 6vh;
+    margin-left: 1vw;
+    min-width: 15vw;
+}
+
+.TopBar-Top > p {
+    margin-left: 1vw;
+    font-size: 35px;
+    color: color.$MainColor;
+}
+
+.TopBar-RechercheBar > img{
+    max-width: 2vw;
+    max-height: 2vw;
+    margin-left: 1vw;
+    margin-right: 0.5vw;
+    padding-right: 1vw;
+    border-right: color.$MainColor 2px solid;
+}
+
+.TopBar-SearchBar{
+    background-color: transparent;
+    border: transparent;
+    color: color.$MainColor;
+    max-width: 9vw;
+}
+.Top-ReveniraLacceuillButton{
+    border: transparent;
+    background: transparent;
+}
