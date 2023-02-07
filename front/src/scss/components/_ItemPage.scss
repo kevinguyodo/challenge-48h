@@ -14,6 +14,12 @@
     margin-top: 3vh;
     margin-left: 5vw;
 }
+.Item-img{
+    width: 35vw;
+    height: 74vh;
+    margin-top: 5vh;
+    margin-left: 2vw;
+}
 
 .ItemPage-RightBloc{
     width: 50vw;
@@ -41,4 +47,33 @@
     width: 24vw;
     height: 49vh;
     margin-bottom: 5vh;
+  }
+  .ItemPage-coloms{
+    display: flex;
+    flex-direction: column;
+  }
+  .Item-green{
+    font-size: 30px;
+    text-transform: uppercase;
+    color : green;
+    margin-left: 2vw;
+  }
+  .Item-twoToRight{
+    margin-left: 2vw;
+  }
+  .ItemPage-coloms > button{;
+    margin-left: 10vw;
+    min-width: 15vw;
+    min-height: 5vh;
+    margin-bottom: 2vh;
+    border-raduis: 5px;
+  }
+  .ItemPage-coloms > button:first-child{
+    margin-top: 4vh;
+    color : color.$SecondColor;
+    background: color.$MainColor;
+  }
+  .ItemPage-coloms > button:last-child{
+    background: transparent;
+    border: color.$MainColor 2px solid;
   }

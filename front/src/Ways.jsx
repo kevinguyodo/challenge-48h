@@ -9,13 +9,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
 function Ways() {
-  const [test, setTest] = useState([]);
-
-  useEffect(() => {
-    getData("company").then((company) => setTest(company.data));
-  }, []);
-
-  console.log(test);
   return (
     <>
       <BrowserRouter>

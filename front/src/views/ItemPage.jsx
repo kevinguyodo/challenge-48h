@@ -6,7 +6,7 @@ const ItemPage = () => {
   return (
     <div>
       <TopBar/>
-      <Item data={state}/>
+      <Item data={state.Data}/>
     </div>  
   )
 }

@@ -12,17 +12,13 @@ const HomePage = (props) => {
                 nom: "souris",
                 price: 10,
                 Constructor: "logitech",
-                image : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.20minutes.fr%2Fsociete%2F3321527-20220706-panda-o-vient-rumeur-selon-laquelle-animal-existerait&psig=AOvVaw2Nu3xdFrrXDrHxxijVG4NN&ust=1675834987696000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIjjlPvZgv0CFQAAAAAdAAAAABAE"
+                description : "sàjjgjàgniodo)doni^jdergjeo)=gnz oozefn pizçf bz àizepfà çzuio zçà=fhjzeuç_zbefipuzuy_çefbuipuiznfiupzuefzneifuzfnzeoijf ipzeuf çàzefio ziejr oizeujioécjçrz'hioczunipufhidçàg hbdkjvi ebgpçdjhg jlhsçà fhbspiof jhzboufhjpdhg àrhbbkjm rj gà$dgnkmelrigdnrlg oirekjgjerp gjerôj"
         }
         return (
                 <div className="HomePage-page">
                         <input type="checkbox" className='HomePage-CheckBox'/>
                         <h2>DERNIERS PRODUITS</h2>
                         <section className="HomePage-Products">
-                            <Item data={data} IntoViews={IntoViews}/>
-                            <Item data={data} IntoViews={IntoViews}/>
-                            <Item data={data} IntoViews={IntoViews}/>
-                            <Item data={data} IntoViews={IntoViews}/>
                             <Item data={data} IntoViews={IntoViews}/>
                         </section>
                         <h2>NOS VENDEURS</h2>

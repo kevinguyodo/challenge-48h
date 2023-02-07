@@ -5,6 +5,7 @@ import {useNavigate} from 'react-router-dom'
 const Home = () => {
     const navigate = useNavigate()
     const IntoItemPage = (Data) => {
+        console.log(Data)
         navigate('/ItemPage', { state : {Data : Data}})
     }
         return (
