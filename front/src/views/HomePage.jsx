@@ -1,6 +1,6 @@
 import HomePage from '../components/HomePage';
 
-function Home() {
+const Home = () => {
         return (
             <HomePage/>
         )
