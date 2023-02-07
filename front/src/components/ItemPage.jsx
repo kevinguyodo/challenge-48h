@@ -1,6 +1,12 @@
 import PP from '../assets/pp.svg';
 
 const ItemPage = (props) => {
+    const addToPanier = (item) => {
+
+    }
+    const buyNow = (item) => {
+
+    }
     return(
         <section className="ItemPage-Bloc">
             <div className='ItemPage-LeftBloc'>
@@ -21,8 +27,8 @@ const ItemPage = (props) => {
                             </div>
                     </div>
                     <div className='ItemPage-coloms'>
-                        <button>Ajouter au panier</button>
-                        <button>Achetez maintenant</button>
+                        <form><button onClick={() => addToPanier(pro)}>Ajouter au panier</button></form>
+                        <form><button onClick={() => buyNow(pro)}>Achetez maintenant</button></form>
                     </div>
                 </div>
                     
