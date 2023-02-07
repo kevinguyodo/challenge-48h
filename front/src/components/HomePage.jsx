@@ -2,8 +2,10 @@ import Logo from '../assets/Logoblack.svg';
 import Loupe from '../assets/loupe.png';
 import PP from '../assets/pp.svg';
 import Item from './Item';
-const HomePage = () => {
-
+const HomePage = (props) => {
+        const IntoViews = (Data) => {
+                props.IntoItemPage(Data)
+        }
         //todo introduire l'api et faire une requete pour recuperer les produits
         //todo faire une boucle pour afficher les produits
         const data = {
@@ -14,31 +16,14 @@ const HomePage = () => {
         }
         return (
                 <div className="HomePage-page">
-                        {/* <section className="HomePage-Top">
-                                <img src={Logo} alt="Logo" className="HomePage-Logo" />
-                                <p>YMazone</p>
-                                <form><button className='HomePage-AddButton'>+</button></form>
-                                <div className='HomePage-RechercheBar'>
-                                        <img src={Loupe} alt="loupe logo" />
-                                        <input type="text" className='HomePage-SearchBar'/>
-                                </div>
-                                <img src={PP} alt="profile image" /> 
-                        </section> */}
                         <input type="checkbox" className='HomePage-CheckBox'/>
                         <h2>DERNIERS PRODUITS</h2>
                         <section className="HomePage-Products">
-                            <Item data={data}/>
-                            <Item data={data}/>
-                            <Item data={data}/>
-                            <Item data={data}/>
-                            <Item data={data}/>
-                            <Item data={data}/>
-                            <Item data={data}/>
-                            <Item data={data}/>
-                            <Item data={data}/>
-                            <Item data={data}/>
-                            <Item data={data}/>
-                            <Item data={data}/>
+                            <Item data={data} IntoViews={IntoViews}/>
+                            <Item data={data} IntoViews={IntoViews}/>
+                            <Item data={data} IntoViews={IntoViews}/>
+                            <Item data={data} IntoViews={IntoViews}/>
+                            <Item data={data} IntoViews={IntoViews}/>
                         </section>
                         <h2>NOS VENDEURS</h2>
                 </div>

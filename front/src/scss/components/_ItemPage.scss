@@ -1,0 +1,44 @@
+@use '../ForAll/colors' as color;
+
+.ItemPage-Bloc{
+    width: 100vw;
+    height: 80vh;
+    background-color: color.$MainColor;
+    display: flex;
+    flex-direction: row;
+}
+.ItemPage-LeftBloc{
+    width: 35vw;
+    height: 74vh;
+    background-color: color.$SecondColor;
+    margin-top: 3vh;
+    margin-left: 5vw;
+}
+
+.ItemPage-RightBloc{
+    width: 50vw;
+    height: 74vh;
+    background-color: color.$MainColor;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+.ItemPage-RightBloc-bot{
+  background: color.$SecondColor;
+  width: 50vw;
+  height: 20vh;
+}
+.ItemPage-RightBloc-rig{
+    background: color.$SecondColor;
+    width: 24vw;
+    height: 49vh;
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+  }
+  .ItemPage-RightBloc-left{
+    background: color.$SecondColor;
+    width: 24vw;
+    height: 49vh;
+    margin-bottom: 5vh;
+  }

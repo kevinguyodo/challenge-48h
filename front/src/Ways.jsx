@@ -4,6 +4,7 @@ import CustomerCreateAccount from './views/CustomerCreateAccount'
 import SellerCreateAccount from './views/SellerCreateAccount'
 import HomePage from './views/HomePage'
 import AddProductPage from './components/AddProductPage'
+import ItemPage from './views/ItemPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function Ways() {
@@ -19,6 +20,7 @@ return (
           <Route path='/CustomerCreateAccount' element={<CustomerCreateAccount />} />
           <Route path='/SellerCreateAccount' element={<SellerCreateAccount />} />
           <Route path='/HomePage' element={<HomePage />} />
+          <Route path='/ItemPage' element={<ItemPage />} />
         </Routes>
       </BrowserRouter>
   </>
