@@ -1,9 +1,6 @@
 import { useState } from "react";
 
 
-function Login() {
-  const [count, setCount] = useState(0);
-
 function Login(props) {
   const [Email, setEmail] = useState("");
   const [psw, setPSW] = useState("");
