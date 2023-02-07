@@ -5,6 +5,9 @@
 @use "./components/HomePage";
 @use "./components/Item";
 @use "./components/Cart";
+@use "./components/addProductPage";
+@use "./components/topBar";
+@use "./components/ItemPage";
 
 /*On importe les composents qui seront appliquer à toutes les pages*/
 @use "./ForAll/forall";

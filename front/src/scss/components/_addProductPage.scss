@@ -1,0 +1,74 @@
+@use '../ForAll/colors' as color;
+
+.AddProduct-back{
+    background-color : color.$MainColor;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.AddProduct-img{
+    max-width: 12vw;
+    max-height: 12vh;
+    margin-left: 5vh;
+    margin-top: 5vh;
+}
+
+.AddProduct-Middle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20vw;
+    background-color: color.$MainColor;
+    height: 100vh;
+    width: 40vw;
+    align-items: center;
+}
+.AddProduct-title{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color : color.$SecondColor;
+    font-size: 35px;
+}
+
+.AddProduct-forms{
+    color : color.$SecondColor;
+    display: flex;
+    flex-direction: column;
+}
+
+.AddProduct-forms > input {
+    min-height: 6vh;
+    border : 2px color.$SecondColor solid;
+    border-radius: 5px;
+    background-color: color.$MainColor;
+    min-width: 10vw;
+    font-size: 20px;
+    margin-top: 1vh;
+}
+
+.AddProduct-forms > p {
+    font-size: 20px;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+}
+
+.AddProduct-right{
+    margin-left: 10vw;
+}
+
+.AddProduct-left{
+    margin-left: -10vw;
+}
+
+.AddProduct-EnterName{
+    max-width: 30vh;
+    max-height: 5vh;
+}
+
+.AddProduct-buttonAddProduct{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    max-width: 30vh;
+    max-height: 5vh;
+}

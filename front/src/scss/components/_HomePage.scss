@@ -2,28 +2,18 @@
 
 .HomePage-page {
     background-color: color.$MainColor;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
 }
-.HomePage-Top{
-    background-color: color.$SecondColor;
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+
 .HomePage-Logo{
     max-width: 8vw;
     max-height: 8vw;
     margin-left: 1vw;
 }
-.HomePage-Top > p {
-    margin-left: 1vw;
-    font-size: 35px;
-    color: color.$MainColor;
-}
+
 .HomePage-AddButton{
     color : color.$MainColor;
     background-color: transparent;
@@ -32,6 +22,7 @@
     font-weight: bolder;
     margin-left: 55vw;
 }
+
 .HomePage-RechercheBar{
     display: flex;
     align-items: center;
@@ -63,9 +54,11 @@
     font-size: 20px;
     color: color.$MainColor;
 }
+
 .HomePage-whitefont{
     color: color.$SecondColor;
 }
+
 .HomePage-CheckBox{
     //Todo : checkbox
     background-color: red;
