@@ -17,14 +17,26 @@ const Cart = () => {
                                         <img src={Loupe} alt="loupe logo" />
                                 </div>
                         </section>
-                        <p1>MON PANIER :</p1>
+                        <p class="MyCart">MON PANIER :</p>
                         <section className="Cart-Center">
                                 <div className="Cart-Center-Left">
 
                                 </div>
                                 <div className="Cart-Center-Right">
-                                        <div className="Cart-Center-Top"></div>
-                                        <div className="Cart-Center-Bottom"></div>
+                                        <div className="Cart-Center-Top">
+                                        <div className="Button">
+                                                <p class="Products">PRODUITS   .............................13.00€</p>
+                                                <p class="Livraison">LIVRAISON   .............................2.00€</p>
+                                                <p class="Underscores">_________________________</p>
+                                                <p class="Total">TOTAL   ........................15.00€</p>
+                                                   <form><button className='button1' onClick={() => props.ReceiveData(Email,psw)}><p>VALIDER</p></button></form>
+                                        </div>
+                                        </div>
+                                        <div className="Cart-Center-Bottom">
+                                                <p class="Details">Details : <br/><br/><br/>
+                                                    Details : <br/><br/><br/>  
+                                                    Details :</p>
+                                        </div>
 
                                 </div>
                         </section>
