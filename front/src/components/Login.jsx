@@ -17,7 +17,7 @@ function Login(props) {
           </div>      
         </div>
       </div>
+    </div>
     );
-  }
-}
+  } 
 export default Login;
