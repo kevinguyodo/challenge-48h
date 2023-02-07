@@ -4,6 +4,8 @@ import CustomerCreateAccount from './views/CustomerCreateAccount'
 import SellerCreateAccount from './views/SellerCreateAccount'
 import HomePage from './views/HomePage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useEffect, useState } from "react"
+import { getData } from "./CRUD/generic.ts"
 
 
 function Ways() {

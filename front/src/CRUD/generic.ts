@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // TODO Change by your IP address
-const baseURL: string = "http://10.44.17.132:3333/";
+const baseURL: string = "http://192.168.0.8:3333/";
 
 export const getData = (endPoint: string) => {
   try {
