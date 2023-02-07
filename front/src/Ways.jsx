@@ -1,6 +1,7 @@
 import Login from './views/Login'
 import Main from './views/Mainpage'
 import CustomerCreateAccount from './views/CustomerCreateAccount'
+import HomePage from './views/HomePage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function Ways() {
@@ -13,6 +14,7 @@ return (
           <Route path='/' index={true} element={<Main />} />
           <Route path='/login' element={<Login />} />
           <Route path='/CustomerCreateAccount' element={<CustomerCreateAccount />} />
+          <Route path='/HomePage' element={<HomePage />} />
         </Routes>
       </BrowserRouter>
     </>

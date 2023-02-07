@@ -38,7 +38,7 @@
 
 .Create-forms > input {
     min-height: 6vh;
-    border : 2px color.$SecondColor solid;
+    border : solid;
     border-radius: 5px;
     background-color: color.$MainColor;
     min-width: 10vw;
@@ -55,5 +55,13 @@
 }
 .Create-left{
     margin-left: -10vw;
+}
+.Create-Red{
+    color : red;
+    border : red;
+}
+.Create-white{
+    color : greenyellow;
+    border : greenyellow;
 }
 

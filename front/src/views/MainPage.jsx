@@ -4,7 +4,7 @@ function Mainpage() {
   const navigate = useNavigate()
 
   const ToLogin = () => {
-    navigate('/login')
+    navigate('login')
   }
   const ToSellerCreateAccount = () => {
     navigate('CustomerCreateAccount')

@@ -1,5 +1,7 @@
-function HomePage() {
+export function HomePage() {
         return (
-                <div className="black"></div>
+                <div className="black">
+
+                </div>
         )
 }
