@@ -3,6 +3,7 @@ import Main from './views/MainPage'
 import CustomerCreateAccount from './views/CustomerCreateAccount'
 import SellerCreateAccount from './views/SellerCreateAccount'
 import HomePage from './views/HomePage'
+import ProfilePage from './views/ProfilePage'
 import AddProductPage from './components/AddProductPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -19,7 +20,8 @@ return (
           <Route path='/CustomerCreateAccount' element={<CustomerCreateAccount />} />
           <Route path='/SellerCreateAccount' element={<SellerCreateAccount />} />
           <Route path='/HomePage' element={<HomePage />} />
-          <Route path='/AddProduct' element={<AddProduct />} />
+          <Route path='/ProfilePage' element={<ProfilePage/>} />
+      
         </Routes>
       </BrowserRouter>
   </>
