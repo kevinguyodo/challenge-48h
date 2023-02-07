@@ -58,38 +58,57 @@
 }
 
 .Cart-Center {
-    max-width:960px;
-    margin: auto;
-    position:relative;
-    display: table;
-    
+        background-color: color.$SecondColor;
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 }
 
 .Cart-Center-Left {
-    width:15vw;
-    height: 450px;
-    right:0;
-    margin: 10%;
-    display: table-column;
-    background-color:black;
+        background-color: color.$MainColor;
+        height: 70vh;
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 10%;
+        margin-top: 3%;
 }
 
-.Cart-Center-Right{
-    width: 82vw; 
-    height : 360px;   
-    margin: 10px;
-    min-height:150px;
-    display: flex;
-    background-color:#9966FF;
+.Cart-Center-Right {
+        background-color: color.$MainColor;
+        height: 70vh;
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-top: 3%;
 
 }
 
 .Cart-Center-Top {
-
+        background-color: aqua;
+        height: 30vh;
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10%;
+        margin-top: -6.5%;
 }
 
 .Cart-Center-Bottom {
-
+        background-color: color.$MainColor;
+        height: 30vh;
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10%;
+        margin-top: -6.5%;
 }
 
 p1 {
