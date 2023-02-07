@@ -47,6 +47,7 @@ Route.post("/product", "ProductsController.createProduct");
 Route.post("/company", "CompanyController.createCompany");
 Route.post("/carts", "CartsController.createCart");
 Route.post("/user", "AuthController.register");
+Route.post("/login", "AuthController.login");
 
 // Put Method
 Route.put("/product/:id", "ProductsController.updateProduct");

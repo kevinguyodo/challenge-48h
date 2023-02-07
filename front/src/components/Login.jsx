@@ -16,8 +16,14 @@ function Login(props) {
               <div className='Logo'>
           </div>      
         </div>
+<<<<<<< HEAD
       </div>
     </div>
     );
   } 
+=======
+      </div> 
+    </div>);
+  }
+>>>>>>> font-rootPage
 export default Login;
