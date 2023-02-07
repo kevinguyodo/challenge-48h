@@ -6,7 +6,9 @@ function Profile(props) {
   return (
   
 
-        <p1>MOT DE PASSE :</p1>
+    <div className='AddProduct-back'>
+   <p>test</p>
+     </div>
        
           
     

@@ -2,6 +2,7 @@ import Logo from '../assets/Logoblack.svg';
 import Loupe from '../assets/loupe.png';
 import PP from '../assets/pp.svg';
 import HomePage from '../views/HomePage';
+import ProfilePage from '../views/ProfilePage';
 import {useNavigate} from 'react-router-dom'
 
 
@@ -16,7 +17,7 @@ function TopBar(){
 
     const goProfile = () => {
         return(
-            <Profile/>
+            <ProfilePage/>
         )
     }
 
