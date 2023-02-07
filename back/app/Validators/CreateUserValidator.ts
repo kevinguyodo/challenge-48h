@@ -19,6 +19,8 @@ export default class CreateUserValidator {
       rules.alphaNum({ allow: ["space", "dash"] }),
     ]),
 
+    phone_number: schema.string({ trim: true }, [rules.minLength(10)]),
+
     email: schema.string({ trim: true }, [
       rules.email(),
       rules.unique({ table: "users", column: "email" }),

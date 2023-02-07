@@ -1,25 +1,14 @@
 import type { HttpContextContract } from "@ioc:Adonis/Core/HttpContext";
 import Role from "App/Models/Role";
-import CreateRoleValidator from "App/Validators/CreateRoleValidator";
 
 export default class RoleController {
+  async getRole({ request, response }: HttpContextContract) {
+    const role = await Role.findOrFail(request.param("id"));
+    return response.json(role);
+  }
 
   async getAllRole({ response }: HttpContextContract) {
-    try {
-      const tasks = await Role.find({})
-      response.json(tasks);
-      } catch (e) {
-      response.json(e);
-      }
-  }
-
-  async createRole({ request, response }: HttpContextContract) {
-    try {
-      const payload = await request.validate(CreateRoleValidator);
-      const role = await Role.create(payload);
-      response.json(role);
-  } catch(e) {
-      response.json(e);
-  }
+    const roles = await Role.all();
+    return response.json(roles);
   }
 }
