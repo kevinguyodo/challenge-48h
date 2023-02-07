@@ -14,6 +14,10 @@ export default class extends BaseSeeder {
       name: "role name",
     });
 
+    const companyCategory = await CompanyCategory.create({
+      name: "name company category",
+    });
+
     const user = await User.create({
       name: "user name",
       surname: "user surname",
@@ -32,12 +36,13 @@ export default class extends BaseSeeder {
       client_id: user.id,
     });
 
-    const company = await Company.create({
+    await Company.create({
       name: "name company",
       phone_number: "06 06 06 06 06",
       email: "test@test.com",
       address: "this is adresse",
       user_id: user.id,
+      company_category_id: companyCategory.id,
     });
 
     await Product.create({
@@ -94,11 +99,6 @@ export default class extends BaseSeeder {
       price: 1507,
       category_id: category.id,
       cart_id: cart.id,
-    });
-
-    await CompanyCategory.create({
-      name: "name company category",
-      company_id: company.id,
     });
 
     // const user = await User.create({
