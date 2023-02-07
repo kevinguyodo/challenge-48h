@@ -5,7 +5,7 @@ function LoginPage() {
   const navigate = useNavigate()
   const ReceiveData = (mail,psw) =>{
     //Todo faire la requete pour verifier si le mail et le mdp sont correct
-    navigate('/HomePage')
+    navigate('/ProductCreation')
   }
   
   const IntoCustomerAccount = () => {

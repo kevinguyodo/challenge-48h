@@ -3,19 +3,20 @@ import Main from './views/Mainpage'
 import CustomerCreateAccount from './views/CustomerCreateAccount'
 import SellerCreateAccount from './views/SellerCreateAccount'
 import HomePage from './views/HomePage'
+import ProductCreationPage from './views/ProductCreation'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { useEffect, useState } from "react"
-import { getData } from "./CRUD/generic.ts"
+//import { useEffect, useState } from "react"
+//import { getData } from "./CRUD/generic.ts"
 
 
 function Ways() {
-  const [test, setTest] = useState([]);
+  /*const [test, setTest] = useState([]);
 
   useEffect(() => {
     getData("company").then((company) => setTest(company.data));
   }, []);
 
-  console.log(test);
+  console.log(test);*/
   return (
     <>
       <BrowserRouter>
@@ -25,6 +26,7 @@ function Ways() {
           <Route path='/CustomerCreateAccount' element={<CustomerCreateAccount />} />
           <Route path='/SellerCreateAccount' element={<SellerCreateAccount />} />
           <Route path='/HomePage' element={<HomePage />} />
+          <Route path='/ProductCreation' element={<ProductCreationPage />} />
         </Routes>
       </BrowserRouter>
     </>
