@@ -5,11 +5,8 @@ const baseURL: string = "http://10.44.17.132:3333/";
 
 export const getData = (endPoint: string) => {
   try {
-    const response = axios.get(baseURL + endPoint, {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
-    }); //use data destructuring to get data from the promise object
+    const response = axios.get(baseURL + endPoint); //use data destructuring to get data from the promise object
+    console.log(response);
     return response;
   } catch (error) {
     throw new Error(error);

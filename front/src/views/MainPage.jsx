@@ -1,10 +1,9 @@
 import Page from "../components/MainPage";
 import { useNavigate } from "react-router-dom";
 import { getData } from "../CRUD/generic";
+import { useEffect } from "react";
 function Mainpage() {
   const navigate = useNavigate();
-  const test = getData("company");
-  console.log(test);
 
   const ToLogin = () => {
     navigate("/login");
