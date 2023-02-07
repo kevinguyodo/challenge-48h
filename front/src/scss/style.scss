@@ -1,5 +1,9 @@
 /*Je crée la bar de gauche sur l'affichage @use "./components/LeftBar";*/
 @use "./components/login";
+@use "./components/mainPage";
+@use "./components/UserConnectionPage";
+
+
 
 .dis{
     display: flex;
