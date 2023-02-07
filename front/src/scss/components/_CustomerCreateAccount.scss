@@ -1,0 +1,78 @@
+@use '../ForAll/colors' as color;
+
+.CreateAccount-back{
+    background-color : color.$MainColor;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.CreateAccount-img{
+    max-width: 12vw;
+    max-height: 12vh;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+
+.CreateAccount-Middle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20vw;
+    background-color: color.$MainColor;
+    height: 100vh;
+    width: 40vw;
+    align-items: center;
+}
+.CreateAccount-title{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color : color.$SecondColor;
+    font-size: 35px;
+}
+
+.Create-forms{
+    color : color.$SecondColor;
+    display: flex;
+    flex-direction: column;
+}
+
+.Create-forms > input {
+    min-height: 6vh;
+    border : color.$SecondColor 2px solid;
+    border-radius: 5px;
+    background-color: color.$MainColor;
+    min-width: 10vw;
+    font-size: 20px;
+    margin-top: 1vh;
+    color: color.$SecondColor;
+}
+.Create-forms > p {
+    font-size: 20px;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+}
+.Create-right{
+    margin-left: 10vw;
+}
+.Create-left{
+    margin-left: -10vw;
+}
+.Create-Button{
+    color : color.$SecondColor;
+    border-radius: 5px;
+    border: color.$SecondColor 2px solid;
+    min-height: 4vh;
+    background-color: transparent;
+    font-size: 20px;
+    margin-left: 7vw;
+    margin-top: 6vh;
+}
+.Create-RedirecteButton{
+    color : color.$SecondColor;
+    border: transparent;
+    background-color: transparent;
+    font-size: 15px;
+    align-self: auto;
+    margin-top: 2vh;
+    text-decoration: underline;
+}
