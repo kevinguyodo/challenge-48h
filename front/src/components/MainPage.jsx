@@ -13,8 +13,8 @@ const  MainpageComp = (props) => {
           <p className='MainPage-SiteName'>YMazone</p>
           <p className='MainPage-paragraf'>Vos produits en un clic</p>
         </section>
-        <button  className='MainPage-FirstButton' type="submit" onClick={() => props.ToSellerCreateAccount()}>Inscription Client</button>
-        <button  className='MainPage-SecondButton' type="submit" onClick={() => props.ToCustomerCreateAccount()}>Inscription Vendeur</button>
+        <form><button  className='MainPage-FirstButton' type="submit" onClick={() => props.ToCustomerCreateAccount()}>Inscription Client</button></form>
+        <form><button  className='MainPage-SecondButton' type="submit" onClick={() => props.ToSellerCreateAccount()}>Inscription Vendeur</button></form>
       </div>
       <div className='MainPage-WhiteSquare'>
         <p className='MainPage-WhitePartTxt'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum non, dolor a repellat placeat quae accusantium molestias itaque natus quod dolores soluta voluptates alias eveniet iusto! Eligendi, unde? Quas, expedita.</p>

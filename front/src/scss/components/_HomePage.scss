@@ -1,5 +1,82 @@
 @use '../ForAll/colors' as color;
 
-.black {
+.HomePage-page {
     background-color: color.$MainColor;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.HomePage-Top{
+    background-color: color.$SecondColor;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.HomePage-Logo{
+    max-width: 8vw;
+    max-height: 8vw;
+    margin-left: 1vw;
+}
+.HomePage-Top > p {
+    margin-left: 1vw;
+    font-size: 35px;
+    color: color.$MainColor;
+}
+.HomePage-AddButton{
+    color : color.$MainColor;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 55vw;
+}
+.HomePage-RechercheBar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: color.$MainColor solid 2px;	
+    border-radius: 20px;
+    min-height: 6vh;
+    margin-left: 1vw;
+    min-width: 10vw;
+}
+.HomePage-RechercheBar > img{
+    max-width: 2vw;
+    max-height: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding-right: 1vw;
+    border-right: color.$MainColor 2px solid;
+}
+.HomePage-SearchBar{
+    background-color: transparent;
+    border: none 0px;
+    font-size: 20px;
+    color: color.$MainColor;
+}
+.HomePage-RechercheBar > input[type="text"]:enabled{
+    background-color: transparent;
+    border: none 0px;
+    font-size: 20px;
+    color: color.$MainColor;
+}
+.HomePage-whitefont{
+    color: color.$SecondColor;
+}
+.HomePage-CheckBox{
+    //Todo : checkbox
+    background-color: red;
+}
+.HomePage-page > h2{
+    color: color.$SecondColor;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+.HomePage-Products{
+    display :flex;
+    flex-direction: row;
+    margin-left: 2vw;
+    overflow-y: scroll;
 }

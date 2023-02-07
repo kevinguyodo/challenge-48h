@@ -1,9 +1,10 @@
-import Login from "./views/Login";
-import Main from "./views/Mainpage";
-import CustomerCreateAccount from "./views/CustomerCreateAccount";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { getData } from "./CRUD/generic";
+import Login from './views/Login'
+import Main from './views/Mainpage'
+import CustomerCreateAccount from './views/CustomerCreateAccount'
+import SellerCreateAccount from './views/SellerCreateAccount'
+import HomePage from './views/HomePage'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 
 function Ways() {
   const [test, setTest] = useState([]);
@@ -17,12 +18,11 @@ function Ways() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" index={true} element={<Main />} />
-          <Route path="/login" element={<Login />} />
-          <Route
-            path="/CustomerCreateAccount"
-            element={<CustomerCreateAccount />}
-          />
+          <Route path='/' index={true} element={<Main />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/CustomerCreateAccount' element={<CustomerCreateAccount />} />
+          <Route path='/SellerCreateAccount' element={<SellerCreateAccount />} />
+          <Route path='/HomePage' element={<HomePage />} />
         </Routes>
       </BrowserRouter>
     </>

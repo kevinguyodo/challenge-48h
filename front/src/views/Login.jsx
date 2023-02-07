@@ -5,10 +5,11 @@ function LoginPage() {
   const navigate = useNavigate()
   const ReceiveData = (mail,psw) =>{
     //Todo faire la requete pour verifier si le mail et le mdp sont correct
+    navigate('/HomePage')
   }
   
   const IntoCustomerAccount = () => {
-    navigate('CustomerCreateAccount')
+    navigate('/CustomerCreateAccount')
   }
 
   return (

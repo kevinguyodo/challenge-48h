@@ -1,12 +1,12 @@
-import CustomerCreateAccount from '../components/CustomerCreateAccount'
+import SellerCreateAccount from '../components/SellerCreateAccount'
 import {useNavigate} from 'react-router-dom'
 function CreateAccount() {
   const navigate = useNavigate()
   const IntoConnection = () =>{
     navigate('/login')
   }
-  const IntoSeller = () =>{
-    navigate('/SellerCreateAccount')
+  const IntoCustomer = () =>{
+    navigate('/CustomerCreateAccount')
   }
   const IntoSite = (Surname,Name,Email,PSW) =>{
     //todo api check
@@ -14,7 +14,7 @@ function CreateAccount() {
   }
   return (
       <div>
-        <CustomerCreateAccount IntoConnection={IntoConnection} IntoSeller={IntoSeller} IntoSite={IntoSite}/>
+        <SellerCreateAccount IntoConnection={IntoConnection} IntoCustomer={IntoCustomer} IntoSite={IntoSite}/>
       </div>
   )
 }
