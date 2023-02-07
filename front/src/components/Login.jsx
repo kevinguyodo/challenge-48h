@@ -6,9 +6,9 @@ function Login(props) {
   return (
     <div className='white'>
       <div className='Texte'>
-        <p1>MAIL :</p1>
+        <h3>MAIL :</h3>
         <input className='texte-mail' type="email" placeholder='entrer votre mail' onChange={(e) => setEmail(e.target.value)}/>
-        <p1>MOT DE PASSE :</p1>
+        <h3>MOT DE PASSE :</h3>
         <input className='texte-mdp' type="password" placeholder='entrer votre mdp' onChange={(e) => setPSW(e.target.value)}/>
           <div className='Button'>
             <form><button className='button1' onClick={() => props.ReceiveData(Email,psw)}><p>Connexion</p></button></form>
