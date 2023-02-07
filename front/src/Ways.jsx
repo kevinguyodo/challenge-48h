@@ -1,5 +1,5 @@
 import Login from './views/Login'
-import UserConnectionPage from './views/UserConnectionPage'
+import AddProductPage from './views/AddProductPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function Ways() {
@@ -10,7 +10,7 @@ return (
       <BrowserRouter>
         <Routes>
           <Route path='/' index={true} element={<Login />} />
-          <Route path='/ClientConnection' element={<UserConnectionPage />} />
+          <Route path='/AddProduct' element={<AddProductPage />} />
         </Routes>
       </BrowserRouter>
     </>
