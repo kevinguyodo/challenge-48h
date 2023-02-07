@@ -3,8 +3,6 @@ import {
   BaseModel,
   beforeSave,
   column,
-  HasMany,
-  hasMany,
 } from "@ioc:Adonis/Lucid/Orm";
 import Hash from "@ioc:Adonis/Core/Hash";
 
