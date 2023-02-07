@@ -1,0 +1,67 @@
+@use '../ForAll/colors' as color;
+
+.Profile-page {
+    background-color: color.$MainColor;
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    color : color.$SecondColor;
+    margin-top: 2vw;
+    margin-left: 1vw;
+    
+}
+
+.imageProduct{
+    height: 12vh;
+    width: 6.5vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
+
+.profilepage-button1 {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    max-height: -webkit-min-content;
+    width: 16vw;
+    max-height: min-content;
+   margin-left: 5vw;
+   margin-top: 3vw;
+    align-items: center;
+  }
+
+.info-profile{
+    height: 55vh;
+    width: 20vw;
+    color: #000000;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 3vw;
+    margin-left: 3vw;
+
+
+}
+
+.texte{
+    margin-left: 2vw;
+    white-space: nowrap;
+    margin-top: 1vw;
+    line-height: 2vw;
+    
+}
+
+div {
+    float: left;
+    height: 470px;
+    width: 23%;
+    padding: 0 10px;
+  }
+
+
+
