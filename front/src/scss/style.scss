@@ -1,6 +1,10 @@
 /*Je crée la bar de gauche sur l'affichage @use "./components/LeftBar";*/
 @use "./components/login";
+@use "./components/mainPage";
+@use "./components/CustomerCreateAccount";
 
+/*On importe les composents qui seront appliquer à toutes les pages*/
+@use "./ForAll/forall";
 .dis{
     display: flex;
 }

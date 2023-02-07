@@ -1,0 +1,5 @@
+@use '../ForAll/colors' as color;
+
+.black {
+    background-color: color.$MainColor;
+}

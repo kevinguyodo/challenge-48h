@@ -1,9 +1,18 @@
 import Login from '../components/Login'
+import {useNavigate} from 'react-router-dom'
 
 function LoginPage() {
+  const navigate = useNavigate()
+  const ReceiveData = (mail,psw) =>{
+    //Todo faire la requete pour verifier si le mail et le mdp sont correct
+  }
+  
+  const IntoCustomerAccount = () => {
+    navigate('CustomerCreateAccount')
+  }
 
   return (
-      <Login/>
+      <Login ReceiveData={ReceiveData} IntoCustomerAccount={IntoCustomerAccount}/>
   )
 }
 
