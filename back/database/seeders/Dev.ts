@@ -1,4 +1,5 @@
 import BaseSeeder from "@ioc:Adonis/Lucid/Seeder";
+import Cart from "App/Models/Cart";
 import Category from "App/Models/Category";
 import Company from "App/Models/Company";
 import CompanyCategory from "App/Models/CompanyCategory";
@@ -11,11 +12,8 @@ export default class extends BaseSeeder {
       name: "category test",
     });
 
-    await Product.create({
-      name: "product name",
-      description: "description",
-      price: 1500,
-      category_id: category.id,
+    const cart = await Cart.create({
+      client_id: undefined,
     });
 
     const company = await Company.create({
@@ -25,10 +23,19 @@ export default class extends BaseSeeder {
       address: "this is adresse",
     });
 
+    await Product.create({
+      name: "product name",
+      description: "description",
+      price: 1500,
+      category_id: category.id,
+      cart_id: cart.id,
+    });
+
     await CompanyCategory.create({
       name: "name company category",
       company_id: company.id,
     });
+
     // const user = await User.create({
     //   email: "nathan.schneider@ynov.com",
     //   firstname: "nathan",

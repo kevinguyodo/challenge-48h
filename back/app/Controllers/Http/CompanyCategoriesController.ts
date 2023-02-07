@@ -3,7 +3,7 @@ import CompanyCategory from "App/Models/CompanyCategory";
 export default class CompanyCategoriesController {
   async getCompanyCategory({ request, response }: HttpContextContract) {
     const companyCategory = await CompanyCategory.findOrFail(
-      request.param("uuid")
+      request.param("id")
     );
     return response.json(companyCategory);
   }
