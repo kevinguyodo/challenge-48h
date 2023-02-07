@@ -22,8 +22,13 @@ export default class Company extends BaseModel {
   })
   public user: BelongsTo<typeof User>;
 
-  @hasMany(() => CompanyCategory)
-  public company_category: HasMany<typeof CompanyCategory>;
+  @column()
+  public company_category_id: number;
+
+  @belongsTo(() => CompanyCategory, {
+    foreignKey: "company_category_id",
+  })
+  public company_category: BelongsTo<typeof CompanyCategory>;
 
   @column()
   public name: string;

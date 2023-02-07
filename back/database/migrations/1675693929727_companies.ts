@@ -11,6 +11,11 @@ export default class Company extends BaseSchema {
       table.string("email").notNullable();
       table.string("phone_number").notNullable();
       table.string("address").notNullable();
+      table
+        .integer("company_category_id")
+        .unsigned()
+        .references("company_categories.id")
+        .notNullable();
       table.timestamp("created_at", { useTz: true });
       table.timestamp("updated_at", { useTz: true });
     });
