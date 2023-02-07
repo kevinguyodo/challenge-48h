@@ -1,5 +1,12 @@
 @use '../ForAll/colors' as color;
 
+// .TopBar-Top{
+//     background-color: color.$SecondColor;
+//     height: 15vh;
+//     display: flex;
+//     align-items: center;
+// }
+
 .TopBar-Top{
     background-color: color.$SecondColor;
     height: 15vh;
@@ -8,14 +15,34 @@
     align-items: center;
 }
 
+// .TopBar-AddButton{
+//     display: flex;
+//     color : color.$MainColor;
+//     background-color: transparent;
+//     border: none;
+//     font-size: 50px;
+//     font-weight: bolder;
+//     justify-content: flex-end 
+// }
 .TopBar-AddButton{
     color : color.$MainColor;
     background-color: transparent;
     border: none;
     font-size: 50px;
     font-weight: bolder;
-    margin-left: 57vw;
+    margin-left: 55vw;
 }
+// .TopBar-RechercheBar{
+//     display: flex;
+//     align-items: center;
+//     border: color.$MainColor solid 2px;	
+//     border-radius: 20px;
+//     min-height: 6vh;
+//     margin-left: 1vw;   
+//     min-width: 15vw;
+//     justify-content: flex-end 
+
+// }
 
 .TopBar-RechercheBar{
     display: flex;
@@ -25,8 +52,14 @@
     border-radius: 20px;
     min-height: 6vh;
     margin-left: 1vw;
-    min-width: 15vw;
+    min-width: 10vw;
 }
+
+// .TopBar-Top > p {
+//     margin-left: 1vw;
+//     font-size: 35px;
+//     color: color.$MainColor;
+// }
 
 .TopBar-Top > p {
     margin-left: 1vw;
@@ -34,6 +67,14 @@
     color: color.$MainColor;
 }
 
+// .TopBar-RechercheBar > img{
+//     max-width: 2vw;
+//     max-height: 2vw;
+//     margin-left: 1vw;
+//     margin-right: 0.5vw;
+//     padding-right: 1vw;
+//     border-right: color.$MainColor 2px solid;
+// }
 .TopBar-RechercheBar > img{
     max-width: 2vw;
     max-height: 2vw;
@@ -42,14 +83,33 @@
     padding-right: 1vw;
     border-right: color.$MainColor 2px solid;
 }
-
 .TopBar-SearchBar{
+    // display: flex;
     background-color: transparent;
     border: transparent;
     color: color.$MainColor;
     max-width: 9vw;
+    // justify-content: flex-end 
+
 }
+
+// .TopBar-SearchBar{
+//     background-color: transparent;
+//     border: none 0px;
+//     font-size: 20px;
+//     color: color.$MainColor;
+// }
+
 .Top-ReveniraLacceuillButton{
     border: transparent;
     background: transparent;
 }
+
+
+.TopBar-Logo{
+    max-width: 8vw;
+    max-height: 8vw;
+    margin-left: 1vw;
+}
+
+

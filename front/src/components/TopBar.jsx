@@ -11,7 +11,7 @@ function TopBar(){
     }
     return (
         <section className="TopBar-Top">
-           <form><button className='Top-ReveniraLacceuillButton' onClick={() => ReturnButton()}><img src={Logo} alt="Logo" className="TopBar-Logo" /></button></form>
+            <form><button className='Top-ReveniraLacceuillButton' onClick={() => ReturnButton()}><img src={Logo} alt="Logo" className="TopBar-Logo" /></button></form>
             <p>YMazone</p>
             <form><button className='TopBar-AddButton'>+</button></form>    
             <div className='TopBar-RechercheBar'>
