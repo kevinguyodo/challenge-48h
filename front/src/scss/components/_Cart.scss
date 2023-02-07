@@ -1,0 +1,168 @@
+@use '../ForAll/colors' as color;
+
+.Cart-page {
+        background-color: color.$MainColor;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+}
+
+.Cart-Top{
+        background-color: color.$SecondColor;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+
+.Cart-Logo{
+        max-width: 8vw;
+        max-height: 8vw;
+        margin-left: 1vw;
+}
+
+.Cart-Top > p {
+        margin-left: 1vw;
+        font-size: 35px;
+        color: color.$MainColor;
+}
+
+.Cart-AddButton{
+        color : color.$MainColor;
+        background-color: transparent;
+        border: none;
+        font-size: 50px;
+        font-weight: bolder;
+        margin-left: 55vw;
+}
+
+.Cart-RechercheBar{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border: color.$MainColor solid 2px;	
+        border-radius: 20px;
+        min-height: 6vh;
+        margin-left: 1vw;
+        min-width: 10vw;
+}
+
+.Cart-RechercheBar > img{
+        max-width: 2vw;
+        max-height: 2vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding-right: 1vw;
+        border-right: color.$MainColor 2px solid;
+}
+
+.Cart-Center {
+        background-color: color.$MainColor;
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+
+.Cart-Center-Left {
+        background-color: color.$SecondColor;
+        height: 70vh;
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 10%;
+        margin-top: 3%;
+        border-radius: 10px;
+}
+
+.Cart-Center-Right {
+        background-color: color.$MainColor;
+        height: 70vh;
+        width: 30vw;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-top: 3%;
+
+}
+
+.Cart-Center-Top {
+        background-color: color.$SecondColor;
+        height: 25vh;
+        width: 25vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0%;
+        margin-top: 0%;
+        border-radius: 10px;
+}
+
+.Cart-Center-Bottom {
+        background-color: color.$SecondColor;
+        height: 33vh;
+        width: 25vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0%;
+        margin-top: 15%;
+        border-radius: 10px;
+}
+
+.MyCart {
+    font-weight:bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: color.$SecondColor;
+    margin-top: 2vh;
+    font-size: 180%;
+    margin-right: 6%;
+    
+}
+
+p {
+        font-size: 10px;
+}
+
+.button1 {
+        background-color: color.$MainColor;
+        color: color.$SecondColor;
+        border-radius: 12px;
+        font-size: 20px;
+        font-weight:bold;
+        min-height: 1vh;
+        min-width: 10vw;
+        align-items: center;
+        margin-left: 3%; 
+        margin-bottom:12%;   
+}
+
+.Products {
+        font-weight:bold;
+        font-size: 15px;
+        margin-bottom: 2%;
+        margin-top: 35px;
+}
+
+.Livraison {
+        font-weight:bold;
+        font-size: 15px;
+        margin-bottom: 10px;
+}
+
+.Total {
+        font-weight:bold;
+        font-size: 20px;
+        margin-top: 8px;
+}
+
+.Details {
+        font-weight:bold;
+        margin-left: 10%;
+        font-size: 100%;
+}
