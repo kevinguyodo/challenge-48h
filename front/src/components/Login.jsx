@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 function Login(props) {
   const [Email, setEmail] = useState("");
   const [psw, setPSW] = useState("");
@@ -18,8 +17,7 @@ function Login(props) {
           </div>      
         </div>
       </div>
-    </div>
-  )
+    );
+  }
 }
-
 export default Login;

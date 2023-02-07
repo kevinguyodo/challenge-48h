@@ -13,7 +13,7 @@ export default class extends BaseSchema {
         .unsigned()
         .references("categories.id")
         .notNullable();
-      table.integer("cart_id").references("carts.id");
+      table.integer("cart_id").unsigned().references("carts.id");
       table.string("description").notNullable();
 
       /**

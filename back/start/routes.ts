@@ -22,7 +22,6 @@ import Route from "@ioc:Adonis/Core/Route";
 
 // Get Method
 Route.get("/me", "AuthController.me").middleware("auth");
-Route.get("/user/:uuid", "UsersController.getUser");
 Route.get("/product", "ProductsController.getAllProduct");
 Route.get("/product/:id", "ProductsController.getProduct");
 Route.get(
@@ -39,13 +38,18 @@ Route.get("/company", "CompanyController.getAllCompany");
 Route.get("/company/:id", "CompanyController.getCompany");
 Route.get("/carts", "CartsController.getAllCart");
 Route.get("/carts/:id", "CartsController.getCart");
+Route.get("/user/:id", "AuthController.getUser");
+Route.get("/role", "RoleController.getAllRole");
+Route.get("/role/:id", "RoleController.getRole");
 
 // Post Method
 Route.post("/product", "ProductsController.createProduct");
 Route.post("/company", "CompanyController.createCompany");
 Route.post("/carts", "CartsController.createCart");
+Route.post("/user", "AuthController.register");
 
 // Put Method
 Route.put("/product/:id", "ProductsController.updateProduct");
 Route.put("/company/:id", "CompanyController.updateCompany");
 Route.put("/cart/:id", "CartsController.updateCart");
+Route.put("/user/:id", "AuthController.updateUser");

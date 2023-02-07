@@ -1,7 +1,9 @@
-import Page from '../components/MainPage'
-import { useNavigate } from 'react-router-dom';
+import Page from "../components/MainPage";
+import { useNavigate } from "react-router-dom";
+import { getData } from "../CRUD/generic";
+import { useEffect } from "react";
 function Mainpage() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const ToLogin = () => {
     navigate('login')
@@ -10,13 +12,16 @@ function Mainpage() {
     navigate('SellerCreateAccount')
   }
   const ToCustomerCreateAccount = () => {
-    navigate('CustomerCreateAccount')
-  }
+    navigate("CustomerCreateAccount");
+  };
 
   return (
-      <Page ToLogin={ToLogin} ToSellerCreateAccount={ToSellerCreateAccount} ToCustomerCreateAccount={ToCustomerCreateAccount}/>
-  )
+    <Page
+      ToLogin={ToLogin}
+      ToSellerCreateAccount={ToSellerCreateAccount}
+      ToCustomerCreateAccount={ToCustomerCreateAccount}
+    />
+  );
 }
 
-export default Mainpage
-
+export default Mainpage;

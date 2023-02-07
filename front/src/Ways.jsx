@@ -5,11 +5,17 @@ import SellerCreateAccount from './views/SellerCreateAccount'
 import HomePage from './views/HomePage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+
 function Ways() {
+  const [test, setTest] = useState([]);
 
+  useEffect(() => {
+    getData("company").then((company) => setTest(company.data));
+  }, []);
 
-return ( 
-  <>
+  console.log(test);
+  return (
+    <>
       <BrowserRouter>
         <Routes>
           <Route path='/' index={true} element={<Main />} />
@@ -20,7 +26,6 @@ return (
         </Routes>
       </BrowserRouter>
     </>
-)
+  );
 }
-export default Ways
-
+export default Ways;

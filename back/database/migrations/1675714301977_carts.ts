@@ -7,7 +7,11 @@ export default class extends BaseSchema {
     this.schema.createTable(this.tableName, (table) => {
       table.increments("id").primary();
       // Add notnullable when
-      table.integer("client_id").references("users.id");
+      table
+        .integer("client_id")
+        .unsigned()
+        .notNullable()
+        .references("users.id");
       /**
        * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
        */

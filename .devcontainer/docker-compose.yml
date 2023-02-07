@@ -1,0 +1,28 @@
+version: "3"
+services:
+  db:
+    container_name: challenge-48h-postgres-db
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: challenge-48h
+    volumes:
+      - "../:/app"
+      - "/app/nodes_modules"
+    ports:
+      - "5432:5432"
+    expose:
+      - 5432
+
+  web-1:
+    build: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - "../:/app"
+      - "/app/node_modules"
+    ports:
+      - "3000:3000"
+      - "5000:5000"
+    depends_on:
+      - db
