@@ -8,9 +8,10 @@ export default class User extends BaseSchema {
       table.increments("id").primary();
       table.integer("role_id").unsigned().references("roles.id").notNullable();
       table.string("email").notNullable();
-      table.string("nom").notNullable();
-      table.string("prenom").notNullable();
+      table.string("name").notNullable();
+      table.string("surname").notNullable();
       table.string("address").notNullable();
+      table.string("phone_number").notNullable();
       table.string("password").notNullable();
       table.timestamp("created_at").notNullable();
       table.timestamp("updated_at").nullable();

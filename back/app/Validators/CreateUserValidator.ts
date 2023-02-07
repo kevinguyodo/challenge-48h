@@ -5,18 +5,16 @@ export default class CreateUserValidator {
   constructor(protected ctx: HttpContextContract) {}
 
   public schema = schema.create({
-    role_id: schema.number([
-      rules.exists({ table: "roles", column: "id" }),
-    ]),
+    role_id: schema.number([rules.exists({ table: "roles", column: "id" })]),
 
-    prenom: schema.string({ trim: true }, [
+    name: schema.string({ trim: true }, [
       rules.alpha({ allow: ["space", "dash"] }),
     ]),
 
-    nom: schema.string({ trim: true }, [
+    surname: schema.string({ trim: true }, [
       rules.alpha({ allow: ["space", "dash"] }),
     ]),
-    
+
     address: schema.string({ trim: true }, [
       rules.alphaNum({ allow: ["space", "dash"] }),
     ]),
@@ -25,7 +23,7 @@ export default class CreateUserValidator {
       rules.email(),
       rules.unique({ table: "users", column: "email" }),
     ]),
-    password: schema.string({ trim: true }, [rules.minLength(8)])
+    password: schema.string({ trim: true }, [rules.minLength(8)]),
   });
 
   public messages: CustomMessages = {
