@@ -20,7 +20,7 @@ export default class extends BaseSeeder {
       email: "test@test.com",
       address: "this is adresse test",
       phone_number: "06 06 06 06 06",
-      password: "this is password",
+      password: " ",
       role_id: role.id,
     });
 
@@ -41,9 +41,57 @@ export default class extends BaseSeeder {
     });
 
     await Product.create({
-      name: "product name",
-      description: "description",
-      price: 1500,
+      name: "product name1",
+      description: "description1",
+      price: 1501,
+      category_id: category.id,
+      cart_id: cart.id,
+    });
+
+    await Product.create({
+      name: "product name2",
+      description: "description2",
+      price: 1502,
+      category_id: category.id,
+      cart_id: cart.id,
+    });
+
+    await Product.create({
+      name: "product name3",
+      description: "description3",
+      price: 1503,
+      category_id: category.id,
+      cart_id: cart.id,
+    });
+
+    await Product.create({
+      name: "product name4",
+      description: "description4",
+      price: 1504,
+      category_id: category.id,
+      cart_id: cart.id,
+    });
+
+    await Product.create({
+      name: "product name5",
+      description: "description5",
+      price: 1505,
+      category_id: category.id,
+      cart_id: cart.id,
+    });
+
+    await Product.create({
+      name: "product name6",
+      description: "description6",
+      price: 1506,
+      category_id: category.id,
+      cart_id: cart.id,
+    });
+
+    await Product.create({
+      name: "product name7",
+      description: "description7",
+      price: 1507,
       category_id: category.id,
       cart_id: cart.id,
     });
