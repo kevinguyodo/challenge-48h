@@ -9,17 +9,21 @@ import {useNavigate} from 'react-router-dom'
 
 
 function TopBar(){
+    const navigate = useNavigate()
+
     const ReturnButton = () => {
         return(
-            <HomePage/>
+            navigate('/HomePage')
         )
     }
 
     const goProfile = () => {
         return(
-            <ProfilePage/>
+            navigate('/ProfilePage')
         )
     }
+
+    
 
     return (
         <section className="TopBar-Top">
@@ -36,6 +40,8 @@ function TopBar(){
 
         </section>
     )
+
+   
 }
 
 export default TopBar
