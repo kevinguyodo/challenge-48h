@@ -1,0 +1,79 @@
+@use '../ForAll/colors' as color;
+
+.ItemPage-Bloc{
+    width: 100vw;
+    height: 80vh;
+    background-color: color.$MainColor;
+    display: flex;
+    flex-direction: row;
+}
+.ItemPage-LeftBloc{
+    width: 35vw;
+    height: 74vh;
+    background-color: color.$SecondColor;
+    margin-top: 3vh;
+    margin-left: 5vw;
+}
+.Item-img{
+    width: 35vw;
+    height: 74vh;
+    margin-top: 5vh;
+    margin-left: 2vw;
+}
+
+.ItemPage-RightBloc{
+    width: 50vw;
+    height: 74vh;
+    background-color: color.$MainColor;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+.ItemPage-RightBloc-bot{
+  background: color.$SecondColor;
+  width: 50vw;
+  height: 20vh;
+}
+.ItemPage-RightBloc-rig{
+    background: color.$SecondColor;
+    width: 24vw;
+    height: 49vh;
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+  }
+  .ItemPage-RightBloc-left{
+    background: color.$SecondColor;
+    width: 24vw;
+    height: 49vh;
+    margin-bottom: 5vh;
+  }
+  .ItemPage-coloms{
+    display: flex;
+    flex-direction: column;
+  }
+  .Item-green{
+    font-size: 30px;
+    text-transform: uppercase;
+    color : green;
+    margin-left: 2vw;
+  }
+  .Item-twoToRight{
+    margin-left: 2vw;
+  }
+  .ItemPage-coloms > form > button{;
+    margin-left: 10vw;
+    min-width: 15vw;
+    min-height: 5vh;
+    margin-bottom: 2vh;
+    border-raduis: 5px;
+  }
+  .ItemPage-coloms > form:first-child > button{
+    margin-top: 4vh;
+    color : color.$SecondColor;
+    background: color.$MainColor;
+  }
+  .ItemPage-coloms > form:last-child > button{
+    background: transparent;
+    border: color.$MainColor 2px solid;
+  }
