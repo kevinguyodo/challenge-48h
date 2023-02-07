@@ -38,12 +38,13 @@
 
 .Create-forms > input {
     min-height: 6vh;
-    border : solid;
+    border : color.$SecondColor 2px solid;
     border-radius: 5px;
     background-color: color.$MainColor;
     min-width: 10vw;
     font-size: 20px;
     margin-top: 1vh;
+    color: color.$SecondColor;
 }
 .Create-forms > p {
     font-size: 20px;
@@ -56,12 +57,22 @@
 .Create-left{
     margin-left: -10vw;
 }
-.Create-Red{
-    color : red;
-    border : red;
+.Create-Button{
+    color : color.$SecondColor;
+    border-radius: 5px;
+    border: color.$SecondColor 2px solid;
+    min-height: 4vh;
+    background-color: transparent;
+    font-size: 20px;
+    margin-left: 7vw;
+    margin-top: 6vh;
 }
-.Create-white{
-    color : greenyellow;
-    border : greenyellow;
+.Create-RedirecteButton{
+    color : color.$SecondColor;
+    border: transparent;
+    background-color: transparent;
+    font-size: 15px;
+    align-self: auto;
+    margin-top: 2vh;
+    text-decoration: underline;
 }
-
