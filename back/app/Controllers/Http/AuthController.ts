@@ -47,8 +47,7 @@ export default class AuthController {
         return;
       }
       if (await argon2.verify(user.password, params.password)) {
-        const token = this.generateJWT(user.id);
-        response.json(token);
+        response.json(user.id);
       } else {
         response.send("Pas le bon password");
       }
