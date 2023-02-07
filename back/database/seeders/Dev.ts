@@ -1,13 +1,18 @@
 import BaseSeeder from "@ioc:Adonis/Lucid/Seeder";
+<<<<<<< HEAD
 import Cart from "App/Models/Cart";
 import Category from "App/Models/Category";
 import Company from "App/Models/Company";
 import CompanyCategory from "App/Models/CompanyCategory";
 import Product from "App/Models/Product";
+=======
+import User from "App/Models/User";
+>>>>>>> back/user
 
 export default class extends BaseSeeder {
   public async run() {
     // Write your database queries inside the run method
+<<<<<<< HEAD
     const category = await Category.create({
       name: "category test",
     });
@@ -45,5 +50,14 @@ export default class extends BaseSeeder {
     //   phone_number: "06 06 06 06 06",
     //   role: "membre",
     // });
+=======
+    
+    const user = await User.create({
+      email: "nathan.schneider@ynov.com",
+      prenom: "nathan",
+      nom: "schneider",
+      password: "Le schneid"
+    });
+>>>>>>> back/user
   }
 }

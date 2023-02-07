@@ -21,6 +21,7 @@
 import Route from "@ioc:Adonis/Core/Route";
 
 // Get Method
+<<<<<<< HEAD
 Route.get("/me", "AuthController.me").middleware("auth");
 Route.get("/user/:uuid", "UsersController.getUser");
 Route.get("/product", "ProductsController.getAllProduct");
@@ -49,3 +50,15 @@ Route.post("/carts", "CartsController.createCart");
 Route.put("/product/:id", "ProductsController.updateProduct");
 Route.put("/company/:id", "CompanyController.updateCompany");
 Route.put("/cart/:id", "CartsController.updateCart");
+=======
+
+// Post Method
+Route.post("/login", "AuthController.login");
+Route.post("/register", "AuthController.register");
+Route.post("/role", "RoleController.createRole");
+
+// Put Method
+
+Route.delete("/user/:id", "AuthController.deleteUser");
+// TODO Should we instantiate a put method for the login to reset the authentication token
+>>>>>>> back/user
