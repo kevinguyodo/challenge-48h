@@ -1,5 +1,5 @@
 {
-  "name": "SecureCityAPI",
+  "name": "whymazon",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -24,6 +24,10 @@
     "@adonisjs/core": "^5.9.0",
     "@adonisjs/lucid": "^18.3.0",
     "@adonisjs/repl": "^3.1.11",
+    "argon2": "^0.30.2",
+    "jsonwebtoken": "^8.5.1",
+    "koa-compose": "^4.1.0",
+    "koa-jwt": "^4.0.3",
     "luxon": "^3.1.0",
     "pg": "^8.8.0",
     "phc-argon2": "^1.1.4",

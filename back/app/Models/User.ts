@@ -1,6 +1,12 @@
 import { DateTime } from "luxon";
+
+import argon2, { hash } from "argon2";
+import Role from "./Role";
+
 import {
   BaseModel,
+  belongsTo,
+  BelongsTo,
   beforeSave,
   column,
 } from "@ioc:Adonis/Lucid/Orm";
@@ -11,19 +17,24 @@ export default class User extends BaseModel {
   public id: number;
 
   @column()
-  public role: string;
+  public role_id: number;
 
-  @column()
-  public firstname: string;
-
-  @column()
-  public lastname: string;
-
-  @column()
-  public username: string;
+  @belongsTo(() => Role, {
+    foreignKey: "role_id",
+  })
+  public role: BelongsTo<typeof Role>;
 
   @column()
   public email: string;
+
+  @column()
+  public name: string;
+
+  @column()
+  public surname: string;
+
+  @column()
+  public address: string;
 
   @column({ serializeAs: null })
   public password: string;
@@ -37,9 +48,6 @@ export default class User extends BaseModel {
 
   @column()
   public phone_number: string;
-
-  // @hasMany(() => Comment)
-  // public comments: HasMany<typeof Comment>;
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime;

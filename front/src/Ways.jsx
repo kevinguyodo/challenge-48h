@@ -7,11 +7,17 @@ import AddProductPage from './components/AddProductPage'
 import ItemPage from './views/ItemPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+
 function Ways() {
+  const [test, setTest] = useState([]);
 
+  useEffect(() => {
+    getData("company").then((company) => setTest(company.data));
+  }, []);
 
-return ( 
-  <>
+  console.log(test);
+  return (
+    <>
       <BrowserRouter>
         <Routes>
           <Route path='/AddProduct' element={<AddProductPage />} />
@@ -23,8 +29,7 @@ return (
           <Route path='/ItemPage' element={<ItemPage />} />
         </Routes>
       </BrowserRouter>
-  </>
-)
+    </>
+  );
 }
-export default Ways
-
+export default Ways;

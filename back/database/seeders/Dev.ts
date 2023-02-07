@@ -4,16 +4,32 @@ import Category from "App/Models/Category";
 import Company from "App/Models/Company";
 import CompanyCategory from "App/Models/CompanyCategory";
 import Product from "App/Models/Product";
+import Role from "App/Models/Role";
+import User from "App/Models/User";
 
 export default class extends BaseSeeder {
   public async run() {
     // Write your database queries inside the run method
+    const role = await Role.create({
+      name: "role name",
+    });
+
+    const user = await User.create({
+      name: "user name",
+      surname: "user surname",
+      email: "test@test.com",
+      address: "this is adresse test",
+      phone_number: "06 06 06 06 06",
+      password: "this is password",
+      role_id: role.id,
+    });
+
     const category = await Category.create({
       name: "category test",
     });
 
     const cart = await Cart.create({
-      client_id: undefined,
+      client_id: user.id,
     });
 
     const company = await Company.create({
@@ -21,6 +37,7 @@ export default class extends BaseSeeder {
       phone_number: "06 06 06 06 06",
       email: "test@test.com",
       address: "this is adresse",
+      user_id: user.id,
     });
 
     await Product.create({

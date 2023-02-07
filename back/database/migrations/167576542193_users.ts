@@ -6,12 +6,13 @@ export default class User extends BaseSchema {
   public async up() {
     this.schema.createTable(this.tableName, (table) => {
       table.increments("id").primary();
-      table.string("firstname").notNullable();
-      table.string("lastname").notNullable();
-      table.string("username").notNullable();
+      table.integer("role_id").unsigned().references("roles.id").notNullable();
       table.string("email").notNullable();
-      table.string("password").notNullable();
+      table.string("name").notNullable();
+      table.string("surname").notNullable();
+      table.string("address").notNullable();
       table.string("phone_number").notNullable();
+      table.string("password").notNullable();
       table.timestamp("created_at").notNullable();
       table.timestamp("updated_at").nullable();
     });

@@ -5,37 +5,33 @@ export default class CreateUserValidator {
   constructor(protected ctx: HttpContextContract) {}
 
   public schema = schema.create({
-    role: schema.string({ trim: true }, [rules.alpha()]),
+    role_id: schema.number([rules.exists({ table: "roles", column: "id" })]),
 
-    firstname: schema.string({ trim: true }, [
+    name: schema.string({ trim: true }, [
       rules.alpha({ allow: ["space", "dash"] }),
     ]),
 
-    lastname: schema.string({ trim: true }, [
+    surname: schema.string({ trim: true }, [
       rules.alpha({ allow: ["space", "dash"] }),
     ]),
 
-    username: schema.string({ trim: true }, [
-      rules.alphaNum({ allow: ["dash", "underscore"] }),
+    address: schema.string({ trim: true }, [
+      rules.alphaNum({ allow: ["space", "dash"] }),
     ]),
+
+    phone_number: schema.string({ trim: true }, [rules.minLength(10)]),
 
     email: schema.string({ trim: true }, [
       rules.email(),
       rules.unique({ table: "users", column: "email" }),
     ]),
     password: schema.string({ trim: true }, [rules.minLength(8)]),
-
-    phone_number: schema.string({ trim: true }, [
-      rules.alphaNum({ allow: ["space", "dash"] }),
-      // 14 because there are spaces or dashes
-      rules.maxLength(14),
-    ]),
   });
 
   public messages: CustomMessages = {
     // Role error message
-    "role.required": "You must provide a role",
-    "role.alpha": "Your role must be a word composed only of letters",
+    "role_id.required": "You must provide a role",
+    "role_id.alpha": "Your role must be a word composed only of letters",
 
     // Firstname error message
     "firstname.required": "You must provide a firstname",
