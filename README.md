@@ -68,12 +68,14 @@ Nous avons géré pour chaque table un CRUD (si il n'était pas nécessaire, ils
 Nous sommes partie dans un premier temps sur figma pour faire une maquette général du site.
 
 ***
-</br> <img src="https://zupimages.net/viewer.php?id=23/06/2gyf.png">  <br>
+</br> <img src="https://zupimages.net/up/23/06/2gyf.png" width= 780px>  <br>
+
+
 ***
 
 Nous avons mis les b1 et b2 sur la mise en place du front. La technologie que nous avons utilisé est NODE JS en REACT avec vite.
 
-On a installé la dépendance SASS pour utiliser SCSS qui nous a de centraliser les feuilles de styles en cascade.
+Nous avons installé la dépendance SASS pour utiliser SCSS qui nous a permis de centraliser les feuilles de styles en cascade.
 
 ### **Nous avons séparé le code en plusieurs parties :**
 
@@ -115,7 +117,7 @@ Notre site se retrouve avec les pages élémentaires pour le bon POC.
 
 ### **Notre ressenti :** 
 
-Nous sommes plutôt satisfait du travail réalisé par l'équipe malgrès les différences de niveaux. Mais nous sommes quand même frustrés car nous avons fait l'api, le front et la bdd, il ne nous restait qu'à mettre en place les liens entre ces trois éléments. Sans affichage sur notre site, nous avons l'impression de rien avoir même si tout cela n'est qu'une question d'affiche de données.
+Nous sommes plutôt satisfait du travail réalisé par l'équipe malgrés les différences de niveaux. Nous sommes quand même frustrés car nous avons fait l'api, le front et la bdd, mais il nous restait à mettre en place les liens entre ces trois éléments. Sans affichage sur notre site, nous avons l'impression de rien avoir de concret même si tout cela n'est qu'une question de présentation des données.
     
 ## **Pour lancer notre site web :**
 
