@@ -29,7 +29,7 @@ Ensuite nous pouvons voir le status des migrations avec la commande :
 
 Pour créer la base de donnée il faut faire la commande :
 
-{% filename %}node ace migration:run{% endfilename %}
+{% filename %} node ace migration:run {% endfilename %}
 
 Et en cas de modification il faut la rollback et la recréer enf faisant : 
 
