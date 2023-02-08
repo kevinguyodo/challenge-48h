@@ -2,7 +2,18 @@
 
 ## **YMazone**
 
+YMazone est une boutique décentralisée permettant aux petits et moyens commerçants de se libérer des gros marketplaces centralisés.
+Notre prototype permet de mettre en place des solutions, que ce soit du côté technologique comme du côtés front.
 
+En arrivant sur notre site web plusieurs solutions s'offrent à vous :
+
+*Vous êtes un client ?*
+
+- Il vous suffit de vous connecter ou de vous créer un compte afin d'avoir accès aux produits sur notre boutique.
+
+*Vous êtes un Vendeur ?*
+
+- Il vous suffit de vous connecter ou de vous créer un compte afin de pouvoir partager vos produits dans notre boutique et de les gérer.
 
 ## **Infrastructure :**
 
