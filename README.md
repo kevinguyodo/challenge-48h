@@ -1,5 +1,7 @@
 # challenge-48h
 
+## **YMazone**
+
 
 
 ## **Infrastructure :**
@@ -65,41 +67,50 @@ Nous avons géré pour chaque table un CRUD (si il n'était pas nécessaire, ils
 
 Nous sommes partie dans un premier temps sur figma pour faire une maquette général du site.
 
+***
+</br> <img src="https://zupimages.net/viewer.php?id=23/06/2gyf.png">  <br>
+***
+
 Nous avons mis les b1 et b2 sur la mise en place du front. La technologie que nous avons utilisé est NODE JS en REACT avec vite.
 
 On a installé la dépendance SASS pour utiliser SCSS qui nous a de centraliser les feuilles de styles en cascade.
 
 ### **Nous avons séparé le code en plusieurs parties :**
 
-    - assets : images utilisées en front
-    - views : des fonctions qui appellent des composants
-    - components : création des composants de chaque page
-    - scss : le visuel
-    - ways : permet de faire les routes entre les pages de notre site
-    - main : permet d'importer le SCSS et base du serveur
+- assets : images utilisées en front
+
+- views : des fonctions qui appellent des composants
+
+- components : création des composants de chaque page
+
+- scss : le visuel
+
+- ways : permet de faire les routes entre les pages de notre site
+
+- main : permet d'importer le SCSS et base du serveur
 
 
 Notre site se retrouve avec les pages élémentaires pour le bon POC.
 
 ### **Points forts :**
 
-    - Une bonne organisation de nos fichiers
+- Une bonne organisation de nos fichiers
 
-    - Un design qui retient l'attention
+- Un design qui retient l'attention
 
-    - Mise à part quelques execptions de liens, toutes nos pages sont reliées entre elles
+- Mise à part quelques execptions de liens, toutes nos pages sont reliées entre elles
 
-    - prédisposition à la base de données
+- prédisposition à la base de données
 
 ### **Améliorations possibles :**
 
-    - Créer les liens entre le front et la base de données
+- Créer les liens entre le front et la base de données
 
-    - Pages responsives
+- Pages responsives
 
-    - Finir le liens entre les pages et améliorer l'ux et l'ui
+- Finir le liens entre les pages et améliorer l'ux et l'ui
 
-    - proposer plus de fonctionnalités (filtres, dernières commandes, etc...)
+- proposer plus de fonctionnalités (filtres, dernières commandes, etc...)
 
 
 ### **Notre ressenti :** 
@@ -108,15 +119,23 @@ Nous sommes plutôt satisfait du travail réalisé par l'équipe malgrès les di
     
 ## **Pour lancer notre site web :**
 
-1 - se placer dans le dossier front 
-2 - dans le terminal : ``` npm install ```
-3 - toujours dans le terminal : ``` npm run dev ```
-4 - faire de même dans le dossier back
-5 - sur internet aller au localhost ! (vous pouvez à présent vous balader sur notre site )
+1. se placer dans le dossier front 
+2. dans le terminal : 
+```
+npm install
+```
+3. toujours dans le terminal : 
+```
+npm run dev 
+```
+4. faire de même dans le dossier back
+5. sur internet aller au localhost ! (vous pouvez à présent vous balader sur notre site )
 
 
 ## **Notre team :** 
 
 b1 : BIGOT Lucas, NICOLAS Gurvan, HAMON Mathéo
+
 b2 : FAVENNEC Mélaine, RAYNAUD Adrien
+
 b3 : GUYODO Kevin (IA DATA), DESMOULIN Théo (DEV)
