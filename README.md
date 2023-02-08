@@ -64,7 +64,7 @@ node ace migration:run
 
 Nous avons géré pour chaque table un CRUD (si il n'était pas nécessaire, ils n'ont pas été fait) et nous avons créé les routes qui correspondaient.
 
-### **Ce qu'on aurait aimé faire en plus :** 
+### **Améliorations possibles de notre back :** 
 
 - Nous aurions aimé sécurisé les données de la base en ajoutant un token. Lorsque l'utilisateur se connecte on lui affecte un JWT token qui lui sera utile pour récupérer "ses" données. Par exemple lorsqu'il fait un panier, cela enregistre son token et lui permet de retrouver son panier grace à son token. Les autres utilisateurs ne peuvent pas avoir accès à son panier sans son token. De même pour récupérer les données de l'utilisateur.
 
@@ -105,7 +105,7 @@ Nous avons installé la dépendance SASS pour utiliser SCSS qui nous a permis de
 
 Notre site se retrouve avec les pages élémentaires pour le bon POC.
 
-### **Points forts :**
+### **Points forts de notre front :**
 
 - Une bonne organisation de nos fichiers
 
@@ -115,7 +115,7 @@ Notre site se retrouve avec les pages élémentaires pour le bon POC.
 
 - prédisposition à la base de données
 
-### **Améliorations possibles :**
+### **Améliorations possibles de notre front :**
 
 - Créer les liens entre le front et la base de données
 
